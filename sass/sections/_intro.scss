@@ -1,0 +1,36 @@
+@import './abstracts/fontFamily';
+
+.intro-section{
+    background-image: url(../../images/intro-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .header{
+        text-align: right;
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+    .intro-main{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        h1{
+            font-size: 88px;
+            padding-bottom: 20px;
+            font-weight:$bold-font;
+        }
+        p{
+            font-size: 28px;
+            font-style: italic;
+            font-weight: $bold-font;
+        }
+    }
+}

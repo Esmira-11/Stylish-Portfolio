@@ -1,0 +1,7 @@
+@import './fontFamily';
+@mixin btn{
+    width: 175px;
+    height: 65px;
+    color: #fff;
+    background-color: $main-color;
+}
