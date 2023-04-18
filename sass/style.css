@@ -1,3 +1,221 @@
 body {
   font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  color: #212529;
+  box-sizing: border-box;
+}
+
+.intro-section {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../assets/images/intro-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.intro-section .header {
+  position: relative;
+}
+.intro-section .header .svg-box {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(52, 58, 64, 0.5019607843);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-section .header .svg-box svg {
+  color: #fff;
+  width: 14px;
+  height: 16px;
+}
+.intro-section .intro-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.intro-section .intro-main h1 {
+  font-size: 88px;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.intro-section .intro-main p {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.intro-section .intro-main button {
+  background-color: #1D809F;
+  width: 176px;
+  height: 66px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.about-section {
+  margin: 0 auto;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.about-section-content {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px 0 50px;
+}
+.about-section-content a {
+  color: #1D809F;
+}
+.about-section button {
+  width: 176px;
+  height: 66px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #212529;
+  cursor: pointer;
+}
+
+.services-section {
+  height: 70vh;
+  background-color: #1D809F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-section-cards {
+  display: flex;
+}
+.services-section-cards-top, .services-section-cards-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.services-section-cards-top .services-section-card, .services-section-cards-bottom .services-section-card {
+  width: 300px;
+  padding: 0 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-section-cards-top .services-section-card-icon, .services-section-cards-bottom .services-section-card-icon {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services-section-cards-top .services-section-card-icon i, .services-section-cards-bottom .services-section-card-icon i {
+  font-size: 30px;
+  color: #1D809F;
+}
+.services-section-cards-top .services-section-card-title, .services-section-cards-bottom .services-section-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+.services-section-cards-top .services-section-card-content, .services-section-cards-bottom .services-section-card-content {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.services-section-name {
+  font-size: 16px;
+  color: #ECB807;
+  text-align: center;
+  font-weight: 700;
+}
+.services-section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 0 60px;
+}
+
+.download-section {
+  height: 75vh;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/images/back-img.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download-section-title {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  padding-bottom: 50px;
+}
+.download-section-title span {
+  font-style: italic;
+}
+.download-section-btn {
+  background-color: #1D809F;
+  width: 176px;
+  height: 66px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.portfolio-section {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-section-name {
+  font-size: 16px;
+  color: #ECB807;
+  text-align: center;
+  font-weight: 700;
+}
+.portfolio-section-title {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 10px 0 30px;
+}
+.portfolio-section-cards {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-section-cards-top, .portfolio-section-cards-bottom {
+  display: flex;
+  width: 100%;
+}
+.portfolio-section-cards-top .portfolio-card, .portfolio-section-cards-bottom .portfolio-card {
+  width: 612px;
+  height: 408px;
 }/*# sourceMappingURL=style.css.map */
