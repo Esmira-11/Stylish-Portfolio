@@ -91,8 +91,8 @@ body{
 //ABOUT-SECTION
 .about-section{
     margin: 0 auto;
-    width: 50%;
-    height: 50vh;
+    width: 60%;
+    height: 60vh;
     text-align: center;
     @include column();
     &-title{
@@ -169,7 +169,7 @@ body{
 
 // DOWNLOAD SECTION
 .download-section{
-    height: 75vh;
+    height: 95vh;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../assets/images/back-img.jpg');
     @include column();
     &-title{
@@ -194,6 +194,7 @@ body{
 
 // PORTFOLIO
 .portfolio-section{
+    padding: 100px 0;
     width: 60%;
     margin: 0 auto;
     @include column;
@@ -214,7 +215,117 @@ body{
             .portfolio-card{
                 width: 612px;
                 height: 408px;
+                position: relative;
+                z-index: 10;
+                
+                :hover img{
+                    transform: none;
+                    opacity: 0.3;
+                }
+                :hover {
+                    transition-duration: 1s;
+                    transform: scale(0.90,0.86);
+                    background: #1D809F;
+                } 
+                &-img{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &-content{
+                    transition: none !important;
+                    color: #fff;
+                    position: absolute;
+                    width: 80%;
+                    bottom: 60px;
+                    left: 60px;
+                    z-index: 9;
+                    
+                }
+                h5{
+                    transform: none;
+                    font-size: 12.8px;
+                    font-weight: $bold-weight;
+                    padding-bottom: 10px;
+                }
+                p{
+                    transform: none;
+                    font-weight: 300;
+                    font-size: 19.2px;
+                }
             }
         }
+    }
+}
+
+// MAP SECTION
+.map-section{
+    
+    &-top{
+        background-color: $back-color;
+        @include column();
+        height: 50vh;
+    }
+    &-title{
+        color: #fff;
+        font-size: 32px;
+        font-weight: $bold-weight;
+        padding: 25px 0;
+    }
+    &-btns{
+        display: flex;
+        button{
+            @include btn();
+            font-family: $font-family;
+        }
+        .click-btn{
+            button{
+                width: 141px;
+                color: $text-color;
+                margin-right: 20px;
+            }
+        }
+        .look-btn{
+            button{
+                width: 158px;
+                background-color: $text-color;
+            }
+        }
+    }
+    &-bottom{
+        iframe{
+            width: 100%;
+            height: 65vh;
+        }
+    }
+}
+
+// FOOTER SECTION
+.footer{
+    height: 40vh;
+    @include column();
+    &-top{
+        display: flex;
+        .media-link{
+            cursor: pointer;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: $back-color;
+            margin-right: 12px;
+            @include column();
+            .fa-brands{
+                font-size: 22px;
+                color: #fff;
+            }
+        }
+    }
+    &-bottom{
+        text-align: center;
+        padding-top: 40px;
+        font-size: 14px;
+        color: #6c757d !important;
+        font-weight: 400;
     }
 }
